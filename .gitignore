@@ -1,0 +1,20 @@
+# python
+__pycache__
+
+# pytest
+.pytest_cache
+
+# build
+build/
+dist/
+*.egg-info/
+
+# poetry
+poetry.lock
+requirements.txt
+
+# pycharm
+.idea
+
+# vscode
+.vscode

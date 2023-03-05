@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mock"
+version = "0.1.0"
+description = "Mock implementation of the NAI backend"
+authors = ["Aedial <aedial.dev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7.2,<3.12"
+pydantic = "^1.10.5"
+SQLAlchemy = "^2.0.4"
+starlette = "^0.25.0"
+fastapi = "^0.92.0"
+fastapi-jwt-auth = "^0.5.0"
+pillow = "^9.4.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+
+
+[tool.poetry.scripts]
+start = "mock.main:start"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
